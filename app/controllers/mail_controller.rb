@@ -31,11 +31,11 @@ class MailController < ApplicationController
         new_post.title = @title
         new_post.email = @email
         new_post.content = @content
-        # index를 통해서 받은 애들을 db로
+        # home를 통해서 받은 애들을 db로
         new_post.save # 받을 거야
         
         redirect_to "/list"
-        # write로 왔을 때 바로 list로 넘어가는게 redirect_to
+        # sending 왔을 때 바로 list로 넘어가는게 redirect_to
         
     end
     

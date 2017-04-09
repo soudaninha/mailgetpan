@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'mailgun-ruby'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 group :production do
   gem 'pg'
