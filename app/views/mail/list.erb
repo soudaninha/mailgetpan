@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>메일 저장소</title>
+</head>
+<body>
+    <div class="container">
+    <h1>이 곳은 메일이 저장되는 곳입니다.</h1>
+    <% @mailing.each do |k| %>
+    <!-- % 뒤의 =은 뒤의 아가들을 보여주겠다! 프린트 기능 -->
+    <!-- 한번에 가져온거니까 나눠서 보여줘야 함 -->
+    <h4>제목 : <%= k.title %><br>
+    받는 사람 : <%= k.email %><br>
+    내용 : <%= k.content %><br><h4>
+    
+    <% end %>
+    
+    <a href = "/">메인으로 가기</a>
+
+    </div>
+</body>
+</html>
